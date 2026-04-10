@@ -7,8 +7,8 @@ const FoodCard = ({ food }) => {
   const { id, dish_name, image_link, category, rating, price, cuisine } = food;
 
   return (
-    <div className="group rounded-2xl bg-white dark:bg-gray-900 shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-200 dark:border-gray-700">
-      {/* Fixed Image Section */}
+    <div className="group rounded-2xl bg-white dark:bg-gray-900 shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-200 dark:border-gray-700 mt-4">
+  
       <div className="relative h-45 w-full overflow-hidden bg-gray-100 dark:bg-gray-800">
         <Image
           src={image_link}
@@ -22,7 +22,7 @@ const FoodCard = ({ food }) => {
         </span>
       </div>
 
-      {/* Content */}
+
       <div className="p-5 space-y-3">
         <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-100 line-clamp-2">
           {dish_name}
