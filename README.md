@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🍽️ Next Food App — My Next.js Learning Project
 
-## Getting Started
+A food discovery app I built while learning **Next.js** from scratch. This project is not just an app — it's a hands-on record of everything I've been exploring in modern web development.
 
-First, run the development server:
+---
+
+## 📚 What I Learned Building This
+
+### 🗂️ Routing & Navigation
+- File-based routing with the **App Router**
+- Dynamic routes using `[id]` params (`/foods/[id]`)
+- Navigating between pages with `next/link`
+
+### ⚡ Rendering & Hydration
+- Difference between **CSR (Client-Side Rendering)** and **SSR (Server-Side Rendering)**
+- How **hydration** works in Next.js
+- When to use each rendering strategy
+
+### 🧩 Components
+- Difference between **Server Components** and **Client Components**
+- When and why to use `"use client"`
+- Building reusable components for cleaner code
+
+### 🌐 Data Fetching
+- Fetching data inside **Server Components** (async/await)
+- Passing fetched data down as props
+- Working with dynamic data in detail pages
+
+### 🔄 Loading & Error Handling
+- Using `loading.js` for automatic loading UI
+- Using `error.js` for graceful error boundaries
+- Understanding how Next.js handles these at the route level
+
+### 🎨 UI & Styling
+- Responsive design with **Tailwind CSS**
+- Building a clean, functional interface while focusing on logic
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Role |
+|---|---|
+| Next.js (App Router) | Framework & Routing |
+| React | UI Components |
+| Tailwind CSS | Styling |
+| JavaScript | Logic |
+
+---
+
+## ⚙️ Getting Started
 
 ```bash
+git clone https://github.com/Saharier36/Next-Food-App.git
+cd Next-Food-App
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📌 Status
 
-## Learn More
+> 🚧 Actively learning — this project grows as I explore more Next.js concepts.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🙋‍♂️ Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Saharier Omi**
+[GitHub](https://github.com/Saharier36) • [LinkedIn](https://linkedin.com/in/saharier-omi)
