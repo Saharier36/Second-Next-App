@@ -8,7 +8,6 @@ const FoodCard = ({ food }) => {
 
   return (
     <div className="group rounded-2xl bg-white dark:bg-gray-900 shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-200 dark:border-gray-700 mt-4">
-  
       <div className="relative h-45 w-full overflow-hidden bg-gray-100 dark:bg-gray-800">
         <Image
           src={image_link}
@@ -21,7 +20,6 @@ const FoodCard = ({ food }) => {
           NEW
         </span>
       </div>
-
 
       <div className="p-5 space-y-3">
         <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-100 line-clamp-2">
@@ -43,17 +41,11 @@ const FoodCard = ({ food }) => {
         </div>
 
         <div className="flex gap-2 pt-3">
-          <Link
-            href={`/cart/${id}`}
-            className="flex-1 btn btn-success"
-          >
+          <Link href={"/foods/addToCart"} className="flex-1 btn btn-success">
             Add to Cart
           </Link>
 
-          <Link
-            href={`/foods/${id}`}
-            className="flex-1 btn btn-outline"
-          >
+          <Link href={`/foods/${id}`} className="flex-1 btn btn-outline">
             Details
           </Link>
         </div>

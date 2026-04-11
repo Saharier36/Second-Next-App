@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const FoodDetailPage = async ({ params }) => {
   const { foodId } = await params;
@@ -8,14 +9,16 @@ const FoodDetailPage = async ({ params }) => {
   );
   const data = await res.json();
 
-  const {id, dish_name,
+  const {
+    id,
+    dish_name,
     category,
     rating,
     price,
     cuisine,
     image_link,
-    main_ingredients,} = data.data;
- 
+    main_ingredients,
+  } = data.data;
 
   return (
     <div className="bg-linear-to-br from-gray-50 to-gray-100 dark:from-gray-950 dark:to-gray-900 py-12 px-4 mt-25 rounded-xl">
@@ -54,9 +57,9 @@ const FoodDetailPage = async ({ params }) => {
               </ul>
             </div>
 
-            <button className="btn btn-success">
+            <Link href={"/foods/addToCart"} className="btn btn-success">
               Add to Cart
-            </button>
+            </Link>
           </div>
 
           {/* RIGHT SIDE - IMAGE FIXED */}
